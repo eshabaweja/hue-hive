@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐝 HueHive</title>
+
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+    <h1>🐝 HueHive</h1>
+    <h3>Upload an Image, get a Color Palette</h3>
+    <!-- this is where the img upload form goes -->
+    <form action="/results" method="post" enctype="multipart/form-data">
+        <label for="image_file">Upload the source image here: </label>
+        <input id="image_file" type="file">
+        <br>
+        <input class="hue-btn" type="submit" value="Generate Palette">
+    </form>
+</body>
+
+</html>
