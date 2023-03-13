@@ -16,7 +16,7 @@
     <!-- this is where the img upload form goes -->
     <form action="/results" method="post" enctype="multipart/form-data">
         <label for="image_file">Upload the source image here: </label>
-        <input id="image_file" type="file">
+        <input id="image_file" name="uploaded_img" type="file" required>
         <br>
         <input class="hue-btn" type="submit" value="Generate Palette">
     </form>
